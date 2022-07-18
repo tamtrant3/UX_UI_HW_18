@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    color: #424242;
+    color: black;
 }
 
 html, body {
@@ -17,13 +17,14 @@ html, body {
     --page-margin: 3rem;
     --nav-height: 72px;
     --footer-height: 72px;
+    --h1: 26px;
 }
 
 /*NAV*/
 
 nav {
     height: var(--nav-height);
-    border-bottom: var(--ln);
+    /* border-bottom: var(--ln); */
     padding: 0 var(--page-margin);
     display: flex;
     align-items: center;
@@ -53,21 +54,21 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-right: var(--ln);
+    /*border-right: var(--ln);*/
     background-image: url(../Images/pfp-image.svg);
-    background-size: 50%;
+    background-size: 66%;
     background-repeat: no-repeat;
-    background-position: 0% 10%;
+    background-position: 0% 20%;
 }
 
 #bio > .bubble {
-    width: 60%;
+    width: 58%;
     padding: 1rem;
-    transform: translate(75%, var(--page-margin));
-    border: var(--ln);
+    transform: translate(90%, var(--page-margin));
+    border: 1px solid black;
     border-radius: 0.5rem;
-    box-shadow: 0.5rem 0.5rem 0 #424242;
-    background-color: white;
+    box-shadow: 0.4rem 0.4rem 0 black;
+    background-color: white; 
 }
 
 .bubble {
@@ -76,6 +77,9 @@ nav a {
     gap: 1rem;
 }
 
+.bubble h1 {
+    font-size: var(--h1);
+}
 /* FOOTER */
 
 #bio > footer {
@@ -85,7 +89,7 @@ nav a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-top: var(--ln);
+    /* border-top: var(--ln); */
 }
 
 .social > * {
@@ -111,4 +115,50 @@ nav a {
 .instagram {
     background-image: url(../Images/instagram-logo.png);
     background-size: cover;
+}
+
+/*MAIN */
+
+main {
+    grid-column: span 8;
+    overflow-y: scroll;
+    max-height: calc(100vh - var(--nav-height));
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--page-margin);
+    background-color: #F3F1Ed;
+}
+
+main > .casestudy {
+    min-height: 400px;
+    display: flex;
+    border: var(--ln);
+    border-radius: 1rem;
+}
+
+main > .casestudy > .left {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    border-right: var(--ln);
+}
+
+main > .casestudy > .right {
+    flex: 2;
+}
+
+button {
+    width: 30%;
+    min-height: 36px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.4rem;
+    box-shadow: 0.2rem 0.2rem 0 black;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
 }
