@@ -33,7 +33,7 @@ nav {
 
 nav .links {
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 nav a {
@@ -131,7 +131,7 @@ main {
 }
 
 main > .casestudy {
-    min-height: 400px;
+    min-height: 300px;
     display: flex;
     border: var(--ln);
     border-radius: 1rem;
@@ -144,11 +144,39 @@ main > .casestudy > .left {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
-    border-right: var(--ln);
+    border-right: var(--ln); 
 }
 
 main > .casestudy > .right {
     flex: 2;
+}
+
+#casestudy1 {
+    background-image: url(../Images/wires-mock-up.png);
+    background-size: 130%;
+    background-position: 70% 70%;
+    background-repeat: no-repeat;
+}
+
+#casestudy2 {
+    background-image: url(../Images/curiado-mock-up.png);
+    background-size: 130%;
+    background-position: 70% 70%;
+    background-repeat: no-repeat;
+}
+
+#casestudy3 {
+    background-image: url(../Images/cer-mock-up.png);
+    background-size: 130%;
+    background-position: 70% 70%;
+    background-repeat: no-repeat;
+}
+
+#casestudy4 {
+    background-image: url(../Images/wires-mock-up.png);
+    background-size: 130%;
+    background-position: 70% 70%;
+    background-repeat: no-repeat;
 }
 
 button {
