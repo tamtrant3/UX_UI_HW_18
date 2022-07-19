@@ -190,3 +190,56 @@ button {
     font-size: 14px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+    #shell {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bio {
+        z-index: 1;
+        background-size: 40%;
+    }
+
+    #bio > .bubble {
+        transform: translate(60%, var(--page-margin));
+    }
+
+    #bio > footer {
+        background-color: white;
+        position: sticky;
+        bottom: 0;
+        top: calc(100vh - var(--nav-height));
+    }
+
+
+    /* #bio {
+        grid-column: span 4;
+        height: calc(100vh - var(--nav-height));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /*border-right: var(--ln);*/
+        /* background-image: url(../Images/pfp-image.svg);
+        background-size: 66%;
+        background-repeat: no-repeat;
+        background-position: 0% 20%;
+    } */
+
+    /* #bio > .bubble {
+        width: 58%;
+        padding: 1rem;
+        transform: translate(90%, var(--page-margin));
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        box-shadow: 0.4rem 0.4rem 0 black;
+        background-color: white; 
+    } */
+
+   main {
+    transform: translate(0rem, -35rem);
+    height: 100vh;
+    overflow-y: visible;
+   }
+}
