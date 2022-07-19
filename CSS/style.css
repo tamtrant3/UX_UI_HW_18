@@ -239,7 +239,30 @@ button {
 
    main {
     transform: translate(0rem, -35rem);
-    height: 100vh;
     overflow-y: visible;
+    padding: 5rem 2rem;
    }
+
+   /* main {
+    grid-column: span 8;
+    overflow-y: scroll;
+    max-height: calc(100vh - var(--nav-height));
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--page-margin);
+    background-color: #F3F1Ed;
+} */
+
+   main > .casestudy {
+    transform: translate(0rem, 10rem);
+    min-height: 250px;
+   }
+
+   /* main > .casestudy {
+    min-height: 300px;
+    display: flex;
+    border: var(--ln);
+    border-radius: 1rem;
+    } */
 }
