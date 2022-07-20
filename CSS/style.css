@@ -42,6 +42,14 @@ nav a {
     text-decoration: none;
 }
 
+nav .burger {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
 /* SHELL */
 #shell {
     display: grid;
@@ -172,12 +180,12 @@ main > .casestudy > .right {
     background-repeat: no-repeat;
 }
 
-#casestudy4 {
+/* #casestudy4 {
     background-image: url(../Images/wires-mock-up.png);
     background-size: 130%;
     background-position: 70% 70%;
     background-repeat: no-repeat;
-}
+} */
 
 button {
     width: 30%;
@@ -331,4 +339,31 @@ button {
     #bio > .bubble {
         transform: translate(55%, var(--page-margin));
     }
+
+    nav .links {
+        display: none;
+    }
+
+    nav .burger {
+        display: inherit;
+        transform: rotate(90deg);
+        font-weight: 600;
+        font-size: 1.5rem;
+        cursor: pointer;        
+    }
+
+    /* .menu {
+        display: inherit;
+    }
+
+     .menu .menu-item {
+        background-color: black;
+        color: white;
+        height: 56px;
+        padding: 0 var(--page-margin);
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(255,255,255,0.12);
+    } */
 }
